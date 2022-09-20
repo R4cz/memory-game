@@ -23,7 +23,7 @@ Variables y configuraciones que vamos a usar a lo largo del programa
 altura_boton = 30  # El botón de abajo, para iniciar juego
 medida_cuadro = 200  # Medida de la imagen en pixeles
 # La parte trasera de cada tarjeta
-nombre_imagen_oculta = "D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/oculta.png"
+nombre_imagen_oculta = "./assets/oculta.png"
 imagen_oculta = pygame.image.load(nombre_imagen_oculta)
 segundos_mostrar_pieza = 2  # Segundos para ocultar la pieza si no es la correcta
 """
@@ -51,14 +51,14 @@ class Cuadro:
 Todo el juego; que al final es un arreglo de objetos
 """
 cuadros = [
-    [Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/coco.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/coco.png"),
-     Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/manzana.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/manzana.png")],
-    [Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/limón.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/limón.png"),
-     Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/naranja.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/naranja.png")],
-    [Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/pera.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/pera.png"),
-     Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/piña.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/piña.png")],
-    [Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/plátano.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/plátano.png"),
-     Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/sandía.png"), Cuadro("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/sandía.png")],
+    [Cuadro("./assets/coco.png"), Cuadro("./assets/coco.png"),
+     Cuadro("./assets/manzana.png"), Cuadro("./assets/manzana.png")],
+    [Cuadro("./assets/limón.png"), Cuadro("./assets/limón.png"),
+     Cuadro("./assets/naranja.png"), Cuadro("./assets/naranja.png")],
+    [Cuadro("./assets/pera.png"), Cuadro("./assets/pera.png"),
+     Cuadro("./assets/piña.png"), Cuadro("./assets/piña.png")],
+    [Cuadro("./assets/plátano.png"), Cuadro("./assets/plátano.png"),
+     Cuadro("./assets/sandía.png"), Cuadro("./assets/sandía.png")],
 ]
 # Connection
 connection = Connection()
@@ -81,11 +81,11 @@ color_green = (82, 183, 136)
 color_ocultar_botones = (39,39,42)
 
 # Los sonidos
-sonido_fondo = pygame.mixer.Sound("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/fondo.wav")
-sonido_clic = pygame.mixer.Sound("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/clic.wav")
-sonido_exito = pygame.mixer.Sound("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/ganador.wav")
-sonido_fracaso = pygame.mixer.Sound("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/equivocado.wav")
-sonido_voltear = pygame.mixer.Sound("D:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/assets/voltear.wav")
+sonido_fondo = pygame.mixer.Sound("./assets/fondo.wav")
+sonido_clic = pygame.mixer.Sound("./assets/clic.wav")
+sonido_exito = pygame.mixer.Sound("./assets/ganador.wav")
+sonido_fracaso = pygame.mixer.Sound("./assets/equivocado.wav")
+sonido_voltear = pygame.mixer.Sound("./assets/voltear.wav")
 
 # Calculamos el tamaño de la pantalla en base al tamaño de los cuadrados
 anchura_pantalla = len(cuadros[0]) * medida_cuadro

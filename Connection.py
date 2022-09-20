@@ -3,7 +3,7 @@ import sqlite3
 class Connection:
 
     def open( self):
-        connection = sqlite3.connect( "d:/Oscar/Progamación/Portfolio/Hola Mundo/Ejercicio 3/JuegoDeMemoria.db")
+        connection = sqlite3.connect( "./JuegoDeMemoria.db")
         return connection
     
     def add_to_ranking(self, data):
